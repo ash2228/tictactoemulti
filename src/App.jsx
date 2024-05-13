@@ -6,7 +6,7 @@ export default function App() {
   let [sign,setSign] = useState();
   let [turn,setTurn] = useState(false);
   useEffect(()=>{
-    player = io("http://localhost:3002/")
+    player = io("http://13.232.124.81:3002/")
     setPlayer(player)
     console.log(player)
     player.on("sign",(sig)=>{
